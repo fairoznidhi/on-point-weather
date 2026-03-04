@@ -110,6 +110,7 @@ export default function WeatherScreen() {
 
   if (loading) return <ActivityIndicator size="large" />
   if (errorMsg) return <Text>{errorMsg}</Text>
+  console.log(locations)
 
   return (
     <View style={styles.container}>
